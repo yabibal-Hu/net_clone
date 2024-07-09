@@ -6,7 +6,7 @@ import Nav from "./Header/Header";
 import Row from "./Row/Row";
 import requests from "./requests";
 
-function App() {
+const App=()=> {
   return (
     <div className="App">
       <Nav />
