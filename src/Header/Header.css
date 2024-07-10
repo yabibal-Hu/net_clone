@@ -54,7 +54,7 @@ ul li{
   ul{
     padding : 0;
   }
-   .header__left ul li:last-child {
+   .header__left ul li:last-child, ul li:nth-child(5), ul li:nth-child(6){
         display: none;
     }
 }

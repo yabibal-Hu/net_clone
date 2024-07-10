@@ -93,13 +93,13 @@
 
 @media only screen and (max-width: 768px) {
  .banner__title{
-  font-size: 30px;
+  font-size: 25px;
  }
  .banner__description{
   margin-bottom: -20px;
  }
  .banner__contents {
-  padding-top: 90vh;
+  padding-top: 80vh;
  }
  .banner {
   height: 50vh;

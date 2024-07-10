@@ -2,8 +2,22 @@ import "./Footer.css";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
+import React, { useState, useEffect } from 'react';
+
 
 function Footer() {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  const handleResize = () => {
+    setIsMobile(window.innerWidth <= 768);
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   return (
     <div className="footer_outer_container">
       <div className="footer_inner_container">
@@ -18,7 +32,7 @@ function Footer() {
               <li>Audio Description</li>
               <li>Investor Relations</li>
               <li>Legal Notice</li>
-              <li className="service_code">Service Code</li>
+              {!isMobile && <li className="service_code">Service Code</li>}
               
             </ul>
             
@@ -44,11 +58,12 @@ function Footer() {
               <li>Contact Us</li>
             </ul>
           </div>
+
         </div>
-        {/* <div className="service_code">
+        <div className="service_code">
           <p>Service Code</p>
-        </div> */}
-        <div className="copy_write">&copy; 1997-2024 Netflix, Inc.</div>
+        </div>
+        <div className="copy_write">&copy; <p>1997-2024 Netflix, Inc.</p></div>
       </div>
     </div>
   );

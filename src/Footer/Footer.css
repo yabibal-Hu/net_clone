@@ -63,4 +63,30 @@
   bottom: -30vh;
 
   }
+  .footer_data {
+    flex-direction: column;
+    /* align-items: center; */
+    margin-left: 15vw;
+    padding: 0;
+  }
+  .footer_data ul {
+    margin: 0;
+    padding: 0;
+    /* justify-content: center; */
+  }
+
+  .service_code {
+    /* width: 100px; */
+    margin: 0 0 0 15vw;
+    padding: 0;
+  }
+  .copy_write{
+    margin:0 0 20px 15vw;
+    position: fixed;
+    bottom: 0;
+
+  }
+  .footer_outer_container{
+    /* padding: 0; */
+  }
 }
