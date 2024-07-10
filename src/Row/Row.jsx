@@ -34,7 +34,6 @@ function Row({ title, fetchUrl, isLargeRow }) {
         .then((url) => {
           const urlParams = new URLSearchParams(new URL(url).search);
           setTrailerUrl(urlParams.get("v"));
-          console.log(urlParams.get("v"));
         })
         .catch((error) => console.log(error));
     }
@@ -42,7 +41,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
 
   return (
     <div className="row">
-      <h1>{title}</h1>
+      <p>{title}</p>
       <div className="row__posters">
         {movies.map((movie) => (
           <img
@@ -57,11 +56,10 @@ function Row({ title, fetchUrl, isLargeRow }) {
         ))}
       </div>
 
-      {/* {console.log({trailerUrl} && {trailerUrl} )} */}
-      <div style={{ padding: "20px" }}>
+     
+      <div style={{ padding: "10px" }}>
         {trailerUrl && <Youtube videoId={trailerUrl} opts={opts} />}
 
-        {/* {console.log({trailerUrl})} */}
       </div>
     </div>
   );

@@ -79,7 +79,7 @@
 
 .banner__fadeBottom {
   position: absolute;
-  nav-index: 2;
+  /* nav-index: 2; */
   bottom: -2px;
   width: 100%;
   height: 8rem;
@@ -87,6 +87,22 @@
     180deg,
     transparent,
     rgba(0, 0, 0, 0.61),
-    #111
+    #000000
   );
+}
+
+@media only screen and (max-width: 768px) {
+ .banner__title{
+  font-size: 30px;
+ }
+ .banner__description{
+  margin-bottom: -20px;
+ }
+ .banner__contents {
+  padding-top: 90vh;
+ }
+ .banner {
+  height: 50vh;
+
+ }
 }

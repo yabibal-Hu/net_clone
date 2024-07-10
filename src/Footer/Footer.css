@@ -4,16 +4,19 @@
   display: flex;
   justify-content: center;
   padding: 20px 0;
+  width: 100%;
+  overflow-x: hidden;
 }
 .footer_inner_container {
   width: 60%;
   padding: 20px;
+  margin: 0 auto;
 }
 .footer_icon {
   width: 100px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin: 0 0 20px 50px;
   color: #fff;
 }
 .footer_data {
@@ -36,13 +39,28 @@
   /* align-items: center; */
   /* justify-content: center; */
   border: 1px solid #fff;
-  padding: 5px;
-  margin: 3rem;
+  padding: 5px 0;
+  margin: 1rem 0;
   cursor: pointer;
   width: 120px;
 }
 .copy_write {
+  /* display: flex !important; */
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: -17vh;
+  margin: 0 0 160px 3vw;
+  
+  /* top: 0; */
   font-size: 12px;
-  margin:0 50px;
+  /* margin:0 50px; */
   /* text-align: center; */
+}
+@media only screen and (max-width: 768px) {
+  .copy_write {
+     margin: 0 0 160px 0.3vw;
+  bottom: -30vh;
+
+  }
 }

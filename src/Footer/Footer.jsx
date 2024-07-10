@@ -1,4 +1,3 @@
-import React from "react";
 import "./Footer.css";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -19,7 +18,10 @@ function Footer() {
               <li>Audio Description</li>
               <li>Investor Relations</li>
               <li>Legal Notice</li>
+              <li className="service_code">Service Code</li>
+              
             </ul>
+            
           </div>
           <div>
             <ul>
@@ -43,9 +45,9 @@ function Footer() {
             </ul>
           </div>
         </div>
-        <div className="service_code">
+        {/* <div className="service_code">
           <p>Service Code</p>
-        </div>
+        </div> */}
         <div className="copy_write">&copy; 1997-2024 Netflix, Inc.</div>
       </div>
     </div>
