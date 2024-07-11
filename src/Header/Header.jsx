@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import "./Header.css";
 import SearchIcon from "@mui/icons-material/Search";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
-import { Avatar } from "@mui/material";
+import AccountBoxIcon from '@mui/icons-material/AccountBox';
 
 function Nav() {
   const [show, handleShow] = useState(false);
@@ -49,7 +49,7 @@ function Nav() {
             <NotificationsNoneIcon />
           </li>
           <li>
-            <Avatar />
+            <AccountBoxIcon />
           </li>
         </ul>
       </div>

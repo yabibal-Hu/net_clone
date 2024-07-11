@@ -14,18 +14,25 @@ color: white;
 
 .header__left ul{
  display: flex;
- top: 10px;
+ top: 15px;
+ align-items: center;
 position: absolute;
   justify-items: center;
 }
 ul li{
- list-style-type: none;
+  list-style-type: none;
+  justify-items: center;
  padding: 0.7vw;
+ padding-bottom: 0;
+
  cursor: pointer;
+ align-items: center;
 }
 
 .header__black{
  background-color: #111;
+  justify-items: center;
+
 } 
 
 .header__right ul{
@@ -56,5 +63,15 @@ ul li{
   }
    .header__left ul li:last-child, ul li:nth-child(5), ul li:nth-child(6){
         display: none;
+    }
+    .header__logo{
+      width:50px;
+    }
+    ul li{
+      font-size: 0.8em;
+    }
+    .header{
+      /* hieght:20px; */
+      padding: 10px;
     }
 }
